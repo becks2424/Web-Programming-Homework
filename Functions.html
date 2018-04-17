@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> Choose your starter!</title>
+		<style>
+		img {
+		height: 200px;
+		width: 200px;
+		}
+		</style>
+    </head>
+	
+    <body>
+	<script>
+	var choice = prompt("Which do you choose? 1, 2, or 3?")
+	
+	if (choice == "1")
+{
+	    document.write ("Bulbasaur was your choice!!!!!");
+}
+	
+	if (choice == "2")
+{
+	    document.write ("Squirtle was your choice!!!!!");
+}
+	
+	if (choice == "3")
+{
+	    document.write ("Charmander was your choice!!!!!");
+}
+	    
+	</script>
+	
+		<h1> CHOOSE YOUR STARTER </h1>
+        <div>
+			1)<img src="bulbasaur.png">
+			2)<img src="squirtle.png">
+			3)<img src="charmander.png">
+		</div>
+	
+	<script>
+function char() {
+    var x = document.getElementById("charmander");
+	document.getElementById("charmander").style.visibility = "visible";
+    document.getElementById("bulbasaur").style.visibility = "hidden";
+	document.getElementById("squirtle").style.visibility = "hidden";
+    
+}
+function squirtle() {
+    var x = document.getElementById("bulbasaur");
+    document.getElementById("charmander").style.visibility = "hidden";
+    document.getElementById("bulbasaur").style.visibility = "hidden";
+	document.getElementById("squirtle").style.visibility = "visible";
+}
+	function bulbasaur() {
+    var x = document.getElementById("squirtle");
+	document.getElementById("charmander").style.visibility = "hidden";
+    document.getElementById("bulbasaur").style.visibility = "visible";
+	document.getElementById("squirtle").style.visibility = "hidden";
+   
+}
+	</script>
+
+	<br />
+	<H3 id="out"></H3>
+    </body>
+</html>
